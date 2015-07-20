@@ -10,33 +10,148 @@ package com.example.pacedetect;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int display_background=0x7f040001;
+        public static final int display_words=0x7f040002;
+        public static final int screen_background=0x7f040000;
+    }
     public static final class dimen {
-        /**  Default screen margins, per the Android Design guidelines. 
-
-         Example customization of dimensions originally defined in res/values/dimens.xml
-         (such as screen margins) for screens with more than 820dp of available width. This
-         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
-    
-         */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int button=0x7f050007;
+        public static final int button_sign=0x7f050008;
+        public static final int desired_pace=0x7f050005;
+        public static final int desired_pace_width=0x7f050006;
+        public static final int large_half=0x7f050000;
+        public static final int margin=0x7f050009;
+        public static final int newpadding=0x7f05000d;
+        public static final int padding=0x7f05000a;
+        public static final int row_spacing=0x7f05000b;
+        public static final int small_value=0x7f050002;
+        public static final int step_count=0x7f050003;
+        public static final int switcher=0x7f05000c;
+        public static final int units=0x7f050004;
+        public static final int value=0x7f050001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int box_calories=0x7f08000e;
+        public static final int box_distance=0x7f080004;
+        public static final int box_pace=0x7f080008;
+        public static final int box_speed=0x7f08000b;
+        public static final int box_steps=0x7f080001;
+        public static final int calories_units=0x7f080010;
+        public static final int calories_value=0x7f08000f;
+        public static final int distance_units=0x7f080006;
+        public static final int distance_value=0x7f080005;
+        public static final int gpsswitch=0x7f080011;
+        public static final int pace_units=0x7f08000a;
+        public static final int pace_value=0x7f080009;
+        public static final int row_1=0x7f080000;
+        public static final int row_2=0x7f080007;
+        public static final int speed_units=0x7f08000d;
+        public static final int speed_value=0x7f08000c;
+        public static final int step_units=0x7f080003;
+        public static final int step_value=0x7f080002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
     }
-    public static final class menu {
-        public static final int main=0x7f070000;
-    }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int activity_settings=0x7f060015;
+        public static final int app_name=0x7f060000;
+        public static final int body_weight_setting=0x7f060031;
+        public static final int body_weight_setting_details=0x7f060032;
+        public static final int body_weight_setting_title=0x7f060033;
+        public static final int calories_burned=0x7f06000a;
+        public static final int centimeters=0x7f06000b;
+        public static final int desired_pace=0x7f06000f;
+        public static final int desired_speed=0x7f060010;
+        public static final int exercise_type_running=0x7f060037;
+        public static final int exercise_type_setting=0x7f060034;
+        public static final int exercise_type_setting_details=0x7f060035;
+        public static final int exercise_type_setting_title=0x7f060036;
+        public static final int exercise_type_walking=0x7f060038;
+        public static final int extra_high=0x7f06001a;
+        public static final int extra_low=0x7f060022;
+        public static final int high=0x7f06001c;
+        public static final int higher=0x7f06001d;
+        public static final int inches=0x7f06000c;
+        public static final int incorrect_step_length=0x7f060057;
+        public static final int interval_10_minutes=0x7f060049;
+        public static final int interval_15_seconds=0x7f060044;
+        public static final int interval_1_minute=0x7f060046;
+        public static final int interval_2_minutes=0x7f060047;
+        public static final int interval_30_seconds=0x7f060045;
+        public static final int interval_5_minutes=0x7f060048;
+        public static final int keep_screen_on=0x7f060027;
+        public static final int kilograms=0x7f06000d;
+        public static final int kilometers=0x7f060005;
+        public static final int kilometers_per_hour=0x7f060008;
+        public static final int low=0x7f060020;
+        public static final int lower=0x7f06001f;
+        public static final int maintain_nothing=0x7f06003c;
+        public static final int maintain_pace=0x7f06003d;
+        public static final int maintain_setting=0x7f060039;
+        public static final int maintain_setting_details=0x7f06003a;
+        public static final int maintain_setting_title=0x7f06003b;
+        public static final int maintain_speed=0x7f06003e;
+        public static final int medium=0x7f06001e;
+        public static final int miles=0x7f060006;
+        public static final int miles_per_hour=0x7f060009;
+        public static final int notification_subtitle=0x7f060001;
+        public static final int operation_level_setting=0x7f060023;
+        public static final int operation_level_setting_details=0x7f060024;
+        public static final int operation_level_setting_title=0x7f060025;
+        public static final int pause=0x7f060011;
+        public static final int pounds=0x7f06000e;
+        public static final int quit=0x7f060058;
+        public static final int reset=0x7f060013;
+        public static final int resume=0x7f060012;
+        public static final int run_in_background=0x7f060026;
+        public static final int sensitivity_setting=0x7f060017;
+        public static final int sensitivity_setting_details=0x7f060018;
+        public static final int sensitivity_setting_title=0x7f060019;
+        /**  Settings 
+ Settings 
+ Settings 
+ Settings 
+         */
+        public static final int settings=0x7f060014;
+        public static final int speaking_interval_setting=0x7f060042;
+        public static final int speaking_interval_setting_details=0x7f060043;
+        public static final int started=0x7f060002;
+        public static final int step_length_setting=0x7f06002e;
+        public static final int step_length_setting_details=0x7f06002f;
+        public static final int step_length_setting_title=0x7f060030;
+        public static final int steps=0x7f060004;
+        public static final int steps_per_minute=0x7f060007;
+        public static final int steps_settings_title=0x7f060016;
+        public static final int stopped=0x7f060003;
+        public static final int tell_calories_setting=0x7f060053;
+        public static final int tell_calories_setting_details=0x7f060054;
+        public static final int tell_distance_setting=0x7f06004f;
+        public static final int tell_distance_setting_details=0x7f060050;
+        public static final int tell_fasterslower_setting=0x7f060055;
+        public static final int tell_fasterslower_setting_details=0x7f060056;
+        public static final int tell_pace_setting=0x7f06004d;
+        public static final int tell_pace_setting_details=0x7f06004e;
+        public static final int tell_speed_setting=0x7f060051;
+        public static final int tell_speed_setting_details=0x7f060052;
+        public static final int tell_steps_setting=0x7f06004b;
+        public static final int tell_steps_setting_details=0x7f06004c;
+        public static final int tell_what=0x7f06004a;
+        public static final int units_imperial=0x7f06002d;
+        public static final int units_metric=0x7f06002c;
+        public static final int units_setting=0x7f060029;
+        public static final int units_setting_details=0x7f06002a;
+        public static final int units_setting_title=0x7f06002b;
+        public static final int very_high=0x7f06001b;
+        public static final int very_low=0x7f060021;
+        public static final int voice_setting=0x7f060040;
+        public static final int voice_setting_details=0x7f060041;
+        public static final int voice_settings_title=0x7f06003f;
+        public static final int wake_up=0x7f060028;
     }
     public static final class style {
         /** 
@@ -49,21 +164,43 @@ public final class R {
             backward-compatibility can go here.
         
 
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
- API 11 theme customizations can go here. 
 
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
- API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
