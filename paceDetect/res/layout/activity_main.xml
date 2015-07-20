@@ -208,18 +208,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="114dp"
                 android:background="@color/display_background"
-               android:gravity="center_horizontal"
+                android:gravity="center_horizontal"
                 android:paddingLeft="@dimen/padding"
                 android:paddingRight="@dimen/padding"
                 android:paddingTop="@dimen/padding"
                 android:text=""
+                android:textColor="@color/display_words"
                 android:textSize="@dimen/switcher" />
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="GPS Speed"
+                android:text="GPS Speed km/h"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/display_words"
                 android:textSize="@dimen/newpadding"

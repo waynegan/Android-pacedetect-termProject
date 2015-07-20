@@ -4,11 +4,7 @@ package com.example.pacedetect;
 
 import android.location.Location;
 import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
-import android.os.PowerManager.WakeLock;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 
 public class MyLocationListener implements LocationListener  {
