@@ -4,7 +4,7 @@
 
 package com.example.pacedetect;
 
-import name.bagi.levente.pedometer.R;
+import com.example.pacedetect.R;
 import android.content.Context;
 import android.preference.EditTextPreference;
 import android.util.AttributeSet;

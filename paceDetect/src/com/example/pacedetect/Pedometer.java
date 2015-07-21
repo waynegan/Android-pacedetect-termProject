@@ -64,7 +64,7 @@ public class Pedometer extends Activity {
         mStepValue = 0;
         mPaceValue = 0;
         
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main);
         
         mUtils = Utils.getInstance();
     }

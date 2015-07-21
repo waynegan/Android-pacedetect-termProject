@@ -25,7 +25,7 @@ import android.util.AttributeSet;
 
 /**
  * An {@link EditTextPreference} that only allows float values.
- * @author Levente Bagi
+ * @author
  */
 public class BodyWeightPreference extends EditMeasurementPreference {
 
