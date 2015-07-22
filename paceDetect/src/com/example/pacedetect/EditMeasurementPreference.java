@@ -12,7 +12,7 @@ import android.widget.EditText;
 /**
  * An {@link EditTextPreference} that is suitable for entering measurements.
  * It handles metric/imperial setting.
- * @author Wayne c0645457
+ * @author Levente Bagi
  */
 abstract public class EditMeasurementPreference extends EditTextPreference {
 	boolean mIsMetric;

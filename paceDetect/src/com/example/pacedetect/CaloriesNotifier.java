@@ -1,4 +1,3 @@
-package com.example.pacedetect;
 /*
  *  Pedometer - Android App
  *  Copyright (C) 2009 Levente Bagi
@@ -17,12 +16,12 @@ package com.example.pacedetect;
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
+package com.example.pacedetect;
 
 
 /**
- * 
- * @author Wayne
+ * Calculates and displays the approximate calories.  
+ * @author Levente Bagi
  */
 public class CaloriesNotifier implements StepListener, SpeakingTimer.Listener {
 
