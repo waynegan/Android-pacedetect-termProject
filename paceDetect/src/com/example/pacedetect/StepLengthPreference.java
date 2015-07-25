@@ -19,6 +19,7 @@
 package com.example.pacedetect;
 
 import com.example.pacedetect.R;
+
 import android.content.Context;
 import android.preference.EditTextPreference;
 import android.util.AttributeSet;

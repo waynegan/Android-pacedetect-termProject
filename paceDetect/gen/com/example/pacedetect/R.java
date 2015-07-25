@@ -57,11 +57,16 @@ public final class R {
         public static final int box_pace=0x7f0a0008;
         public static final int box_speed=0x7f0a000b;
         public static final int box_steps=0x7f0a0001;
-        public static final int calories_units=0x7f0a0010;
-        public static final int calories_value=0x7f0a000f;
+        public static final int button_desired_pace_lower=0x7f0a0010;
+        public static final int button_desired_pace_raise=0x7f0a0013;
+        public static final int calories_units=0x7f0a0015;
+        public static final int calories_value=0x7f0a0014;
+        public static final int desired_pace_control=0x7f0a000f;
+        public static final int desired_pace_label=0x7f0a0011;
+        public static final int desired_pace_value=0x7f0a0012;
         public static final int distance_units=0x7f0a0006;
         public static final int distance_value=0x7f0a0005;
-        public static final int gpsswitch=0x7f0a0011;
+        public static final int gpsswitch=0x7f0a0016;
         public static final int pace_units=0x7f0a000a;
         public static final int pace_value=0x7f0a0009;
         public static final int row_1=0x7f0a0000;
@@ -70,8 +75,8 @@ public final class R {
         public static final int speed_value=0x7f0a000c;
         public static final int step_units=0x7f0a0003;
         public static final int step_value=0x7f0a0002;
-        public static final int textView1=0x7f0a0013;
-        public static final int tvSpeed=0x7f0a0012;
+        public static final int textView1=0x7f0a0018;
+        public static final int tvSpeed=0x7f0a0017;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

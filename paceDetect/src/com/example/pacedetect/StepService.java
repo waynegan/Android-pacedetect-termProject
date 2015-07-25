@@ -66,7 +66,7 @@ public class StepService extends Service {
     private DistanceNotifier mDistanceNotifier;
     private SpeedNotifier mSpeedNotifier;
     private CaloriesNotifier mCaloriesNotifier;
-    private SpeakingTimer mSpeakingTimer;
+   
     
     private PowerManager.WakeLock wakeLock;
     private NotificationManager mNM;
@@ -103,7 +103,7 @@ public class StepService extends Service {
 
         mUtils = Utils.getInstance();
         mUtils.setService(this);
-        mUtils.initTTS();
+       
 
         acquireWakeLock();
         
@@ -139,13 +139,7 @@ public class StepService extends Service {
         mCaloriesNotifier.setCalories(mCalories = mState.getFloat("calories", 0));
         mStepDetector.addStepListener(mCaloriesNotifier);
         
-        mSpeakingTimer = new SpeakingTimer(mPedometerSettings, mUtils);
-        mSpeakingTimer.addListener(mStepDisplayer);
-        mSpeakingTimer.addListener(mPaceNotifier);
-        mSpeakingTimer.addListener(mDistanceNotifier);
-        mSpeakingTimer.addListener(mSpeedNotifier);
-        mSpeakingTimer.addListener(mCaloriesNotifier);
-        mStepDetector.addStepListener(mSpeakingTimer);
+      
         
         // Used when debugging:
         // mStepBuzzer = new StepBuzzer(this);
@@ -167,7 +161,7 @@ public class StepService extends Service {
     @Override
     public void onDestroy() {
         Log.i(TAG, "[SERVICE] onDestroy");
-        mUtils.shutdownTTS();
+       
 
         // Unregister our receiver.
         unregisterReceiver(mReceiver);
@@ -275,7 +269,7 @@ public class StepService extends Service {
         if (mDistanceNotifier != null) mDistanceNotifier.reloadSettings();
         if (mSpeedNotifier    != null) mSpeedNotifier.reloadSettings();
         if (mCaloriesNotifier != null) mCaloriesNotifier.reloadSettings();
-        if (mSpeakingTimer    != null) mSpeakingTimer.reloadSettings();
+       
     }
     
     public void resetValues() {
@@ -366,7 +360,7 @@ public class StepService extends Service {
                 System.currentTimeMillis());
         notification.flags = Notification.FLAG_NO_CLEAR | Notification.FLAG_ONGOING_EVENT;
         Intent pedometerIntent = new Intent();
-        pedometerIntent.setComponent(new ComponentName(this, Pedometer.class));
+        pedometerIntent.setComponent(new ComponentName(this, MainActivity.class));
         pedometerIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
                 pedometerIntent, 0);
