@@ -2,11 +2,6 @@
 
 package com.example.pacedetect;
 
-
-/**
- * Calculates and displays the approximate calories.  
- * @author Levente Bagi
- */
 public class CaloriesNotifier implements StepListener {
 
     public interface Listener {
